@@ -1,0 +1,235 @@
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+header{
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.logo span{
+    color: #d4a373;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: #d4a373;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+/* HOME SECTION */
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.85)
+        rgba(0,0,0,0.25)
+    ),
+    url("https://images.unsplash.com/photo-14441986300917-6467bd600d8?w=1600")
+    center/cover;
+    color: white; 
+}
+.hero-content {
+    max-width: 550px;
+}
+.small-heading {
+    color: #d4a373;
+    letter-spacing: 3px;
+}
+.hero h1  {
+    font-size:48px ;
+    margin: 15px 0;
+}
+.hero h1 span {
+    color: #d4a373;
+}
+.btn {
+    display: inline-block;
+    background: #b8875b;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #8e6542;
+}
+
+/* GENERAL SECTIONS */
+.section {
+   padding:75px 8% ; 
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-heading p {
+    color: #b8875b;
+    letter-spacing: 2px;
+}
+.section-heading h2 {
+    font-size: 32px;
+}
+
+/* ABOUT SECTION */
+.about-content {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+.about-content > div {
+    flex: 1;
+}
+.about-content h3 {
+    margin-bottom: 12px;
+}
+.about-details h3:not(:first-child) {
+    margin-top: 20px;
+}
+/* PRODUCTS SECTION */
+.products {
+    background: #f7f5f2;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px
+    rgba(0,0,0,0.08) ;
+} 
+.product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+.product-info h3 {
+    margin-bottom: 8px;
+}
+.product-info strong {
+    display: block;
+    margin-top: 12px;
+    color: #a16b3e;
+}
+
+/* CONTACT SECTION */
+.contact-content {
+    display: flex;
+    gap: 50px;
+}
+.contact-info,
+.contact form {
+    flex: 1;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+.contact textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+#formStatus {
+    font-weight: bold;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    color: white;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width:768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding-top: 20px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+    .about-content
+    .contact-content {
+        flex-direction: column;
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.root {
+    --primary: #123c32;
+    --secondary: #d4af65;
+    --background: #f8f6f0;
+    --dark: #292d2b;
+    --white: #ffffff;
+}
