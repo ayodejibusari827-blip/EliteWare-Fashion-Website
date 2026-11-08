@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteWare Fashion Store</title>
+    <link rel="stylesheet" 
+           href="styles.css">
+</head>
+<body>
+    <!--Navigation-->
+    <header>
+        <nav class="navbar">
+            <a href="home"
+            class="logo">ELITE<span>WEAR</span></a>
+            <button class="menu-toggle" id="menuToggle"
+            aria-label="Togglenavigation" 
+            aria-expanded="false">
+        </button>
+           <ul class="nav-links"
+        id="navLinks">
+           <li><a href="#home">HOME</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#product">Product</a></li>
+           <li><a href="#contact">Contact</a></li>
+    </ul>
+        </nav>
+    </header>
+
+    <!--Home Section-->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p
+            class="small-heading">WELCOME TO ELITEWARE</p>
+            <h1>Discover Your <span>Unique Style</span></h1>
+            <p>
+            Explore quality fashion , beautiful designs and affordable styles made for you
+            </p>
+            <a href="#products" class="btn">Explore collection </a>
+        </div>
+    </section>
+    <!--About Section-->
+    <section class="about section" id="about">
+        <div class="section-heading">
+            <p>WHO WE ARE</p>
+            <h2>About EliteWare</h2>
+        </div>
+
+        <div class="about-content">
+            <div>
+                <h3>Fashion That Defines You</h3>
+                <p>
+EliteWare is a modern fashion business dedicated to providing stylish ,comfortable and qualiy clothing at affordable prices
+                </p>
+                <p>
+                    Our mission is to help people express their pasonality through fashion
+                </p>
+            </div>
+            <div class="about-details">
+                <h3>Our Vision</h3>
+                <p>
+                    To become a trusted fashion brand known for quality , creative and 
+                    customer satisfaction
+                </p>
+                <h3>Our Goals</h3>
+                <p>
+                    To provide quality product , satisfy coustomers and make modern fashion 
+                    accesible to everyone
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Product Section-->
+    <section class="product section" id="product">
+        <div class="section-heading">
+            <p>OUR COLLECTION</p>
+            <h2>Feautured Product</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img
+                src="images/Screenshot_20261108_162935_Google.jpg"
+                                              alt="casual white T-Shirt">
+            <div class="product-info">
+                <h3>Classic T-shirt</h3>
+                <p>Comfortable everyday wear .</p>
+                <strong>12 thousand naira</strong>
+            </div>
+            </div>
+            <div class="product-card">
+                <img
+                src="images/Screenshot_20261108_163215_Google.jpg"
+                                                alt="Fashion denim jeans">
+            <div
+            class="product-info">
+            <h3>Premium jeans</h3>
+            <p>Modern and stylish demin </p>
+            <strong>25 thousand naira</strong>
+        </div>
+            </div>
+            <div class="product-card">
+                <img
+                 src="images/Screenshot_20261108_163407_Google.jpg"
+                                  alt="Fashion sneakers">
+       <div class="product-info">
+        <h3>Classic sneakers</h3>
+        <p>comfort meets mordern style</p>
+        <strong>35 thousand naira</strong>
+          </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Section-->
+    <section class="Contact section"
+    id="contact">
+    <div class="section-heading">
+        <p>GET IN TOUCH</p>
+        <h2>Contact us </h2>
+    </div>
+    <div class="contact-content">
+        <div class="contact-info">
+            <h3>We would love to hear from you</h3>
+            <p>Email:ayodejibusari827@gmail.com</p>
+            <p>Phone:+234 810 393 4825</p>
+            <p>Location:Nigeria</p>
+        </div>
+        <form id="contactForm">
+            <input type="text"
+            id="name"
+            placeholder="Your Full Name" required>
+            <input type="email"
+            id="email"
+            placeholder="Your Email Address" required>
+            <input type="text"
+            id="subject"
+            placeholder="subject" required>
+            <textarea id="message"
+            placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="formStatus" role="status"
+            aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+<!--Footer-->
+<footer>
+    <p>&copy; 2026 EliteWare Fashion Store</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
